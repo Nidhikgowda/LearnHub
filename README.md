@@ -1,66 +1,9 @@
-# LearnHub – Online Course Selling Website
-
-## About the Project
-LearnHub is a web-based online course selling platform developed to help users explore courses, register or log in, and access their learning dashboard. The project uses React for the frontend and Node.js with Express.js for the backend.
-
-## Features
-- User registration and login
-- Browse available courses
-- View course details
-- Course enrollment
-- User dashboard
-- Admin-related functionality
-- REST API backend
-- MongoDB database integration
-
-## Technologies Used
-
-**Frontend**
-- React.js
-- Vite
-- HTML
-- CSS
-- JavaScript
-- Axios
-- React Router
-
-**Backend**
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JSON Web Token (JWT)
-- bcryptjs
-
-## Project Structure
-
-```text
-online-course-selling-website/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   └── package.json
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── package.json
-├── .gitignore
-└── README.md
-```
-
-## Prerequisites
-- Node.js and npm
-- MongoDB
-- Git
-
 ## How to Run the Project
+
+### Prerequisites
+- Node.js and npm installed
+- MongoDB installed and running
+- Git installed
 
 ### 1. Clone the Repository
 
@@ -71,17 +14,21 @@ cd LearnHub
 
 ### 2. Run the Backend
 
+Open a terminal in the project folder and run:
+
 ```bash
 cd backend
 npm install
 npm run dev
 ```
 
-Configure the required environment variables in a `.env` file before starting the backend. Use your local MongoDB connection and the port configured in your project.
+Before starting the backend, configure the required environment variables in the `backend/.env` file.
+
+Make sure MongoDB is running.
 
 ### 3. Run the Frontend
 
-Open a new terminal from the project root and run:
+Open a **new terminal** in the project root and run:
 
 ```bash
 cd frontend
@@ -89,24 +36,22 @@ npm install
 npm run dev
 ```
 
-Open the local URL shown in the terminal to view the website.
+Open the local URL displayed in the terminal to use the website.
 
-## Learning Outcomes
-- Understanding frontend and backend development
-- Connecting a React application with a REST API
-- Working with MongoDB
-- Understanding user authentication
-- Organizing a full-stack web application
+### Windows PowerShell Note
 
-## Future Enhancements
-- Online payment integration
-- Video-based course learning
-- Course search and filtering
-- Improved user interface
-- Course progress tracking
+If PowerShell shows an error saying that running scripts is disabled, use `npm.cmd` instead of `npm`.
 
-## Author
-**Nithya Shree K**
+For example:
 
-## License
-This project was developed for educational purposes.
+```powershell
+npm.cmd install
+npm.cmd run dev
+```
+
+### Troubleshooting
+
+- **npm command error:** Try `npm.cmd` in PowerShell.
+- **MongoDB connection error:** Check that MongoDB is running and the database connection settings are correct.
+- **Port already in use:** Check whether another application is using the required port.
+- **Module not found:** Run `npm.cmd install` in the correct folder.
